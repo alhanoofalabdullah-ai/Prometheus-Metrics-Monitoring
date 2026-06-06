@@ -1,0 +1,41 @@
+groups:
+
+- name: DockerAlerts
+
+  rules:
+
+  - alert: ContainerDown
+
+    expr: up{job="cadvisor"} == 0
+
+    for: 1m
+
+    labels:
+      severity: critical
+
+  - alert: HighContainerCPU
+
+    expr: rate(container_cpu_usage_seconds_total[5m]) * 100 > 80
+
+    for: 2m
+
+    labels:
+      severity: warning
+
+  - alert: HighContainerMemory
+
+    expr: (container_memory_usage_bytes / container_spec_memory_limit_bytes) * 100 > 85
+
+    for: 2m
+
+    labels:
+      severity: critical
+
+  - alert: ContainerRestartIssue
+
+    expr: increase(container_start_time_seconds[10m]) > 5
+
+    for: 1m
+
+    labels:
+      severity: warning
