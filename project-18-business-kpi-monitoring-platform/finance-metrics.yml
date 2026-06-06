@@ -1,0 +1,9 @@
+financial_kpis:
+
+  operating_margin_target: 20
+
+  net_profit_target: 15
+
+  cash_flow_target: positive
+
+  cost_efficiency_target: 90
