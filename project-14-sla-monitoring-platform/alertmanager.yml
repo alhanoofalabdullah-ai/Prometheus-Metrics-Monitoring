@@ -1,0 +1,7 @@
+route:
+
+  receiver: sla-operations
+
+receivers:
+
+- name: sla-operations
