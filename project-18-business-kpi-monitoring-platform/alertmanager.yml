@@ -1,0 +1,7 @@
+route:
+
+  receiver: executive-management
+
+receivers:
+
+- name: executive-management
