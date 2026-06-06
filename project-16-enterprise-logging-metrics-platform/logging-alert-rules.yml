@@ -1,0 +1,41 @@
+groups:
+
+- name: LoggingAlerts
+
+  rules:
+
+  - alert: HighErrorRate
+
+    expr: error_logs_total > 100
+
+    for: 5m
+
+    labels:
+      severity: critical
+
+  - alert: ElasticsearchDown
+
+    expr: up == 0
+
+    for: 2m
+
+    labels:
+      severity: critical
+
+  - alert: HighSecurityEvents
+
+    expr: security_events_total > 50
+
+    for: 5m
+
+    labels:
+      severity: warning
+
+  - alert: LogIngestionFailure
+
+    expr: log_ingestion_failures_total > 0
+
+    for: 2m
+
+    labels:
+      severity: critical
