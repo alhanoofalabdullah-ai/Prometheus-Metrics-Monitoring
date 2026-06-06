@@ -1,0 +1,10 @@
+severity_levels:
+
+  critical:
+    escalation_time: 15
+
+  high:
+    escalation_time: 30
+
+  medium:
+    escalation_time: 60
