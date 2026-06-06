@@ -1,0 +1,41 @@
+groups:
+
+- name: DatabaseAlerts
+
+  rules:
+
+  - alert: DatabaseDown
+
+    expr: up == 0
+
+    for: 1m
+
+    labels:
+      severity: critical
+
+  - alert: HighConnectionUsage
+
+    expr: mysql_global_status_threads_connected > 100
+
+    for: 2m
+
+    labels:
+      severity: warning
+
+  - alert: SlowQueriesDetected
+
+    expr: rate(mysql_global_status_slow_queries[5m]) > 5
+
+    for: 5m
+
+    labels:
+      severity: critical
+
+  - alert: ReplicationLag
+
+    expr: mysql_slave_status_seconds_behind_master > 60
+
+    for: 5m
+
+    labels:
+      severity: warning
