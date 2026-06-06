@@ -1,0 +1,9 @@
+sales_kpis:
+
+  revenue_growth_target: 15
+
+  monthly_sales_target: 500000
+
+  annual_sales_target: 6000000
+
+  profit_margin_target: 25
