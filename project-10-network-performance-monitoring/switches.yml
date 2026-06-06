@@ -1,0 +1,7 @@
+switch_inventory:
+
+  - CoreSwitch01
+
+  - AccessSwitch01
+
+  - AccessSwitch02
