@@ -1,0 +1,7 @@
+route:
+
+  receiver: command-center
+
+receivers:
+
+- name: command-center
