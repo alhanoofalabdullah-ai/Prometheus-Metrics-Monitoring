@@ -1,0 +1,11 @@
+## Deploy Resources
+
+kubectl apply -f manifests/
+
+## Verify Deployments
+
+kubectl get pods -A
+
+kubectl get deployments -A
+
+kubectl get nodes
