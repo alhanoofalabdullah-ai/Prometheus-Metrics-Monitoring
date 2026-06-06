@@ -1,0 +1,7 @@
+environment: testing
+
+purpose: integration_testing
+
+owner: qa_team
+
+criticality: medium
