@@ -1,0 +1,15 @@
+availability_sla:
+
+  target: 99.9
+
+response_time_sla:
+
+  target_seconds: 2
+
+incident_response_sla:
+
+  target_minutes: 15
+
+resolution_sla:
+
+  target_hours: 4
