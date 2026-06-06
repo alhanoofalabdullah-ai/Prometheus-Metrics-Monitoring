@@ -1,0 +1,7 @@
+## Start Monitoring Stack
+
+docker-compose up -d
+
+## Verify Containers
+
+docker ps
