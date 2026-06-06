@@ -1,0 +1,7 @@
+route:
+
+  receiver: devops-team
+
+receivers:
+
+- name: devops-team
