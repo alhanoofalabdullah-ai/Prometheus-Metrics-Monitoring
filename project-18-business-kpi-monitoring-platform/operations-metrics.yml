@@ -1,0 +1,9 @@
+operations_kpis:
+
+  service_availability_target: 99.9
+
+  efficiency_target: 95
+
+  productivity_target: 90
+
+  incident_target: less_than_5
