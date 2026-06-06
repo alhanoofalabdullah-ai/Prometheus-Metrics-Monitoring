@@ -1,0 +1,7 @@
+environment: production
+
+purpose: live_operations
+
+owner: operations_team
+
+criticality: critical
