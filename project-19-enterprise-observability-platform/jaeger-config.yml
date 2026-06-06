@@ -1,0 +1,6 @@
+collector:
+  zipkin:
+    host-port: ":9411"
+
+query:
+  base-path: /
