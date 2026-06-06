@@ -1,0 +1,14 @@
+Development Environment
+up{job="development"}
+
+Testing Environment
+up{job="testing"}
+
+Staging Environment
+up{job="staging"}
+
+Production Environment
+up{job="production"}
+
+Environment Availability
+avg(up) * 100
