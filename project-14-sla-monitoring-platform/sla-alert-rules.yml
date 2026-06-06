@@ -1,0 +1,34 @@
+groups:
+
+- name: SLAAlerts
+
+  rules:
+
+  - alert: AvailabilitySLABreach
+
+    expr: avg(up) * 100 < 99.9
+
+    for: 5m
+
+    labels:
+      severity: critical
+
+  - alert: ResponseTimeSLABreach
+
+    expr: rate(http_server_requests_seconds_sum[5m])
+      /
+      rate(http_server_requests_seconds_count[5m]) > 2
+
+    for: 5m
+
+    labels:
+      severity: warning
+
+  - alert: ErrorRateIncrease
+
+    expr: rate(http_server_requests_seconds_count{status=~"5.."}[5m]) > 5
+
+    for: 5m
+
+    labels:
+      severity: critical
