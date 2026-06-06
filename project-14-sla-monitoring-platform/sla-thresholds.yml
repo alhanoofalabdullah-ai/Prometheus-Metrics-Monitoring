@@ -1,0 +1,11 @@
+availability:
+
+  warning: 99.95
+
+  critical: 99.90
+
+response_time:
+
+  warning: 1.5
+
+  critical: 2.0
