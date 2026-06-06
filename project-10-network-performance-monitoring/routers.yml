@@ -1,0 +1,7 @@
+router_inventory:
+
+  - CoreRouter01
+
+  - BranchRouter01
+
+  - EdgeRouter01
