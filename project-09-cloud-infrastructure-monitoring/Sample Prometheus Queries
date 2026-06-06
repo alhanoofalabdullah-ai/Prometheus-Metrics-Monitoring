@@ -1,0 +1,11 @@
+AWS EC2 CPU Usage
+aws_ec2_cpuutilization_average
+
+Azure VM CPU Usage
+azure_vm_percentage_cpu
+
+GCP Instance CPU Usage
+gcp_compute_cpu_utilization
+
+Cloud Storage Usage
+storage_usage_percent
