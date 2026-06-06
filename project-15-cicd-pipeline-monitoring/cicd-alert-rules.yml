@@ -1,0 +1,41 @@
+groups:
+
+- name: CICDAlerts
+
+  rules:
+
+  - alert: PipelineFailed
+
+    expr: pipeline_failed_total > 0
+
+    for: 1m
+
+    labels:
+      severity: critical
+
+  - alert: HighBuildFailureRate
+
+    expr: build_failure_rate_percent > 20
+
+    for: 5m
+
+    labels:
+      severity: warning
+
+  - alert: DeploymentFailed
+
+    expr: deployment_failed_total > 0
+
+    for: 1m
+
+    labels:
+      severity: critical
+
+  - alert: LongBuildDuration
+
+    expr: build_duration_minutes > 30
+
+    for: 5m
+
+    labels:
+      severity: warning
