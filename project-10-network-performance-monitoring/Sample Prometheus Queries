@@ -1,0 +1,14 @@
+Device Availability
+up
+
+Network Latency
+probe_duration_seconds
+
+Packet Loss
+probe_success
+
+Interface Traffic
+rate(ifHCInOctets[5m])
+
+Interface Errors
+ifInErrors
