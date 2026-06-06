@@ -1,0 +1,21 @@
+## MySQL Exporter Environment
+
+DATA_SOURCE_NAME="monitor:password@(mysql:3306)/"
+
+## PostgreSQL Exporter Environment
+
+DATA_SOURCE_NAME="postgresql://monitor:password@postgres:5432/postgres?sslmode=disable"
+
+## Start Monitoring Platform
+
+docker-compose up -d
+
+## Verify Exporters
+
+MySQL Exporter
+
+http://localhost:9104/metrics
+
+PostgreSQL Exporter
+
+http://localhost:9187/metrics
