@@ -1,0 +1,11 @@
+## Install Windows Exporter
+
+msiexec /i windows_exporter.msi
+
+## Verify Exporter
+
+http://localhost:9182/metrics
+
+## Start Monitoring Stack
+
+docker-compose up -d
