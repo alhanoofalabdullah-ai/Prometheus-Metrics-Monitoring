@@ -1,0 +1,11 @@
+project_id: production-project
+
+services:
+
+  - compute.googleapis.com
+
+  - sqladmin.googleapis.com
+
+  - container.googleapis.com
+
+  - storage.googleapis.com
