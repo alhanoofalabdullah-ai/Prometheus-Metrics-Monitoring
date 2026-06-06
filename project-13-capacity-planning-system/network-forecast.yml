@@ -1,0 +1,9 @@
+resource: Network
+
+forecast_period: 90_days
+
+warning_threshold: 75_percent
+
+critical_threshold: 90_percent
+
+forecast_model: trend_analysis
