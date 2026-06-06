@@ -1,0 +1,14 @@
+routers:
+
+  - name: CoreRouter01
+    ip: 192.168.1.1
+
+switches:
+
+  - name: CoreSwitch01
+    ip: 192.168.1.2
+
+firewalls:
+
+  - name: Firewall01
+    ip: 192.168.1.3
