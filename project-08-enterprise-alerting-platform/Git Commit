@@ -1,0 +1,5 @@
+git add .
+
+git commit -m "add project 08 enterprise alerting platform"
+
+git push
