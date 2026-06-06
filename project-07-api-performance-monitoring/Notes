@@ -1,0 +1,7 @@
+## Run Application
+
+mvn spring-boot:run
+
+## Run Monitoring Stack
+
+docker-compose up -d
