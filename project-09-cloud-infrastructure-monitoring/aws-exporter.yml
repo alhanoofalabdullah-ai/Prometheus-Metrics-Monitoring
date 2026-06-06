@@ -1,0 +1,11 @@
+region: us-east-1
+
+metrics:
+
+  - aws_namespace: AWS/EC2
+
+  - aws_namespace: AWS/RDS
+
+  - aws_namespace: AWS/ELB
+
+  - aws_namespace: AWS/Lambda
