@@ -1,0 +1,9 @@
+customer_kpis:
+
+  retention_target: 95
+
+  churn_target: 5
+
+  satisfaction_target: 90
+
+  active_customer_target: 10000
