@@ -1,0 +1,7 @@
+route:
+
+  receiver: logging-operations
+
+receivers:
+
+- name: logging-operations
