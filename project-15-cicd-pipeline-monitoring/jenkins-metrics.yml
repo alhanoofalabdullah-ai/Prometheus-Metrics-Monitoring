@@ -1,0 +1,21 @@
+jenkins_monitoring:
+
+  metrics:
+
+    - build_success_total
+
+    - build_failed_total
+
+    - build_duration_seconds
+
+    - deployment_success_total
+
+    - deployment_failed_total
+
+  dashboards:
+
+    - build_health
+
+    - deployment_status
+
+    - release_frequency
