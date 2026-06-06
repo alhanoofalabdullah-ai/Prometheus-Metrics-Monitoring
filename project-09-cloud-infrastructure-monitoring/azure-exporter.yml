@@ -1,0 +1,13 @@
+subscriptions:
+
+  - production
+
+resources:
+
+  - virtualMachines
+
+  - sqlServers
+
+  - storageAccounts
+
+  - aksClusters
