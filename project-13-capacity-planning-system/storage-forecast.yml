@@ -1,0 +1,7 @@
+forecast_period: 180_days
+
+resource: Storage
+
+threshold: 95_percent
+
+forecast_model: linear_growth
