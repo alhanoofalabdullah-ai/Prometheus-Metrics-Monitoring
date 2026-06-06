@@ -1,0 +1,5 @@
+CPU Utilization Trend
+avg(rate(node_cpu_seconds_total[5m]))
+
+Storage Growth Trend
+node_filesystem
