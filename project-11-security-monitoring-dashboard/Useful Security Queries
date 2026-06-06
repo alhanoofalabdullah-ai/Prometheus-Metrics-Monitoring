@@ -1,0 +1,11 @@
+Failed Login Attempts
+failed_login_attempts_total
+
+Security Incidents
+security_incidents_total
+
+Suspicious Processes
+suspicious_process_count
+
+Privileged Access Events
+privileged_access_events_total
