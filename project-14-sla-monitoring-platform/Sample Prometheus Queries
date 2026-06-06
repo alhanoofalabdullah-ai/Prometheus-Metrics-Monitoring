@@ -1,0 +1,13 @@
+Service Availability
+avg(up) * 100
+
+Average Response Time
+rate(http_server_requests_seconds_sum[5m])
+/
+rate(http_server_requests_seconds_count[5m])
+
+Error Rate
+rate(http_server_requests_seconds_count{status=~"5.."}[5m])
+
+Service Uptime
+up
