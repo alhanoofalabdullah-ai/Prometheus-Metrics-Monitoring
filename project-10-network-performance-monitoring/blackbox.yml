@@ -1,0 +1,13 @@
+modules:
+
+  icmp:
+
+    prober: icmp
+
+  http_2xx:
+
+    prober: http
+
+  tcp_connect:
+
+    prober: tcp
