@@ -1,0 +1,17 @@
+github_actions_monitoring:
+
+  metrics:
+
+    - workflow_runs_total
+
+    - workflow_failed_total
+
+    - workflow_success_total
+
+    - workflow_duration_seconds
+
+  alerts:
+
+    - workflow_failed
+
+    - long_workflow_duration
