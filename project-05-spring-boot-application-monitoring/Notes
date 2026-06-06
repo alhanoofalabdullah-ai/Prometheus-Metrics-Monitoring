@@ -1,0 +1,11 @@
+## Run Spring Boot
+
+mvn spring-boot:run
+
+## Run Monitoring Stack
+
+docker-compose up -d
+
+## Verify Metrics
+
+http://localhost:8080/actuator/prometheus
