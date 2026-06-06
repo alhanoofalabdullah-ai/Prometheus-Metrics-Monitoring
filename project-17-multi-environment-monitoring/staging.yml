@@ -1,0 +1,7 @@
+environment: staging
+
+purpose: pre_production_validation
+
+owner: release_management
+
+criticality: high
