@@ -1,0 +1,17 @@
+gitlab_ci_monitoring:
+
+  metrics:
+
+    - gitlab_pipeline_total
+
+    - gitlab_pipeline_failed
+
+    - gitlab_pipeline_success
+
+    - gitlab_pipeline_duration_seconds
+
+  alerts:
+
+    - pipeline_failed
+
+    - deployment_failed
