@@ -1,0 +1,7 @@
+forecast_period: 90_days
+
+resource: Memory
+
+threshold: 90_percent
+
+forecast_model: moving_average
