@@ -1,0 +1,17 @@
+## Open Project
+
+docker-compose up -d
+
+## Open Sevices
+
+- Prometheus
+http://localhost:9090
+
+- Grafana
+http://localhost:3000
+
+- Alertmanager
+http://localhost:9093
+
+- Node Exporter
+http://localhost:9100/metrics
