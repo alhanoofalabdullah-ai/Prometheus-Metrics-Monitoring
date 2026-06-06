@@ -1,0 +1,7 @@
+forecast_period: 90_days
+
+resource: CPU
+
+threshold: 85_percent
+
+forecast_model: linear_growth
