@@ -1,0 +1,7 @@
+route:
+
+  receiver: cloud-operations
+
+receivers:
+
+- name: cloud-operations
