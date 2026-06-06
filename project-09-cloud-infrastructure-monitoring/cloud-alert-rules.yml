@@ -1,0 +1,41 @@
+groups:
+
+- name: CloudAlerts
+
+  rules:
+
+  - alert: HighCloudCPU
+
+    expr: avg(cpu_usage_percent) > 80
+
+    for: 5m
+
+    labels:
+      severity: warning
+
+  - alert: HighCloudMemory
+
+    expr: avg(memory_usage_percent) > 85
+
+    for: 5m
+
+    labels:
+      severity: warning
+
+  - alert: CloudStorageCritical
+
+    expr: avg(storage_usage_percent) > 90
+
+    for: 5m
+
+    labels:
+      severity: critical
+
+  - alert: CloudServiceUnavailable
+
+    expr: up == 0
+
+    for: 2m
+
+    labels:
+      severity: critical
