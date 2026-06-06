@@ -1,0 +1,33 @@
+global:
+
+  smtp_smarthost: 'smtp.office365.com:587'
+
+  smtp_from: 'alerts@company.com'
+
+route:
+
+  receiver: operations-team
+
+  group_wait: 30s
+
+  group_interval: 5m
+
+  repeat_interval: 1h
+
+receivers:
+
+- name: operations-team
+
+  email_configs:
+
+  - to: ops-team@company.com
+
+  slack_configs:
+
+  - channel: '#operations'
+
+    send_resolved: true
+
+  webhook_configs:
+
+  - url: 'https://outlook.office.com/webhook/teams-url'
