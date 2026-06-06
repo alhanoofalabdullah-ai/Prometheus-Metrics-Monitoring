@@ -1,0 +1,32 @@
+groups:
+
+- name: CapacityPlanningAlerts
+
+  rules:
+
+  - alert: CPUCapacityForecast
+
+    expr: predict_linear(node_cpu_seconds_total[30d], 2592000) > 85
+
+    for: 10m
+
+    labels:
+      severity: warning
+
+  - alert: MemoryCapacityForecast
+
+    expr: predict_linear(node_memory_MemAvailable_bytes[30d], 2592000) < 1000000000
+
+    for: 10m
+
+    labels:
+      severity: critical
+
+  - alert: StorageCapacityForecast
+
+    expr: predict_linear(node_filesystem_avail_bytes[30d], 2592000) < 5000000000
+
+    for: 10m
+
+    labels:
+      severity: critical
